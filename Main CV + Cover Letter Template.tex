@@ -1,0 +1,215 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 — CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Graduate in Physics with strong analytical ability, programming experience and a growing interest in cyber security. Skilled in Python, C++, MATLAB and system troubleshooting. Motivated to develop skills in network traffic analysis, system log analysis, vulnerability assessment, penetration testing, secure coding, incident response and malware analysis. Curious, detail oriented and committed to continuous learning. Ready to contribute to Amazon while developing professionally through the Cyber Security Apprentice programme.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, MATLAB, Arduino \\
+\textbf{Cyber Skills:} Network analysis, log interpretation, vulnerability identification, basic penetration testing, risk assessment, reconnaissance concepts \\
+\textbf{Tools:} NumPy, Pandas, Matplotlib, Excel, Fusion 360 \\
+\textbf{Core Competencies:} Problem solving, critical thinking, communication, teamwork, curiosity, attention to detail \\
+\textbf{Interests:} Threat intelligence, security monitoring, incident response, secure system design
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics, 2:1}{September 2022 to July 2025}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Office Administrator}{Ashton under Lyne, England}
+    {Leap Family Contact Centre}{September 2025 to Present}
+    \resumeItemListStart
+      \resumeItem{Managed documentation, scheduling and reporting systems with accuracy and consistency.}
+      \resumeItem{Supported process improvements and contributed to efficient internal workflows.}
+      \resumeItem{Handled enquiries and coordinated communication across teams.}
+      \resumeItem{Maintained data quality and ensured reliable information flow.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton under Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Installed and configured operating systems and performed diagnostics to ensure system stability.}
+      \resumeItem{Conducted testing and quality checks to verify performance after repairs.}
+      \resumeItem{Troubleshot hardware and software issues using structured problem solving.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Technical and Analytical Projects} $|$ \emph{Python, MATLAB, NumPy, Pandas}}{2023 to 2025}
+    \resumeItemListStart
+      \resumeItem{Analysed datasets to identify anomalies, patterns and system behaviour.}
+      \resumeItem{Built automated scripts for modelling, visualisation and reporting.}
+      \resumeItem{Created graphs and dashboards to communicate insights clearly.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Fusion 360, Arduino}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Developed control algorithms and tested system performance.}
+      \resumeItem{Debugged hardware and software interactions to improve reliability.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Modelled non linear systems using numerical methods.}
+      \resumeItem{Produced visual outputs to support analysis and interpretation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Hobbies}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Kyokushin Karate}{Springhead, England}
+    {Oldham Kyokushinkai Karate}{March 2024 to Present}
+    \resumeItemListStart
+      \resumeItem{Developed discipline, focus and resilience through regular training.}
+      \resumeItem{Built confidence and consistency through structured practice.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 — COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton-under-Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk} \\
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Manager} \\
+Amazon UK Services Ltd. \\
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Cyber Security Apprentice, 42 Month Fixed Term Contract}
+
+\vspace{0.5cm}
+
+Dear Hiring Manager,
+
+\vspace{0.3cm}
+
+I am applying for the Cyber Security Apprentice position at Amazon. I recently graduated with a BSc in Physics and I am now focused on beginning a career in cyber security. My academic background and technical experience have given me strong analytical skills, a structured approach to problem solving and a genuine interest in understanding how systems behave and how they can be protected.
+
+During my degree, I worked with Python, MATLAB and C++, using these tools to analyse data, interpret system behaviour and troubleshoot technical issues. These projects strengthened my ability to identify anomalies, investigate patterns and apply logical thinking. I believe these skills will support my development in network traffic analysis, system log analysis, vulnerability assessment, secure coding and incident response.
+
+In my previous roles, I gained practical experience working with systems, managing information and supporting operational workflows. As a Computer Technician, I installed operating systems, diagnosed faults and ensured system stability. As an Office Administrator, I maintained accurate records, supported internal processes and communicated effectively with colleagues. These experiences strengthened my attention to detail, communication skills and ability to work with cross functional teams.
+
+I am particularly drawn to this apprenticeship because it offers hands on learning, structured development and the opportunity to work alongside experienced cyber security professionals. The chance to contribute to real security challenges while studying for the BSc Cyber Security Technical Professional Degree is an ideal pathway for me. I am motivated to learn, ready to build new skills and committed to developing the behaviours required for a career in cyber security.
+
+Thank you for considering my application. I would welcome the opportunity to contribute to Amazon while developing my technical and professional skills through this apprenticeship.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+\vspace{0.2cm}
+Zaher Faruk
+
+\end{document}
