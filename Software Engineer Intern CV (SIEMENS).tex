@@ -1,0 +1,155 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics graduate with strong analytical and programming skills, seeking a Software Engineer Intern role within engineering-focused development teams. Experienced in object-oriented programming, simulation, numerical modelling and data visualisation using C++, Python, MATLAB and Java. Motivated to contribute to high-quality engineering software in an agile environment.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, Java (academic), MATLAB, Arduino \\
+\textbf{Software Engineering:} Object Oriented Design, debugging, testing, version control (Git) \\
+\textbf{Engineering \& Data:} Simulation, numerical methods, data analysis, visualisation \\
+\textbf{Tools:} NumPy, Pandas, Matplotlib, Fusion 360, Tinkercad, Excel \\
+\textbf{Systems:} Windows, Linux/UNIX \\
+\textbf{Core Competencies:} Problem solving, teamwork, communication, attention to detail
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics, 2:1}{September 2022 to July 2025}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Producing and Engineering a Drone} $|$ \emph{C++, Arduino, Fusion 360, Tinkercad}}{Sep 2023 -- Jun 2024}
+    \resumeItemListStart
+      \resumeItem{Developed and programmed a real-time flight control system using C++ on Arduino.}
+      \resumeItem{Designed and assembled electronic components including motors, ESCs and flight controller.}
+      \resumeItem{Created custom mechanical components using CAD modelling in Fusion 360.}
+      \resumeItem{Diagnosed and resolved hardware faults and software bugs during testing and integration.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{IBM Quantum, PennyLane, Azure Quantum}}{Oct 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Developed programs to run and compare algorithms across multiple quantum computing platforms.}
+      \resumeItem{Worked with diverse architectures including superconducting qubits, photonic systems, trapped ions and quantum annealers.}
+      \resumeItem{Analysed system behaviour, constraints and performance differences between platforms.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non-Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{Sep 2024 -- Oct 2024}
+    \resumeItemListStart
+      \resumeItem{Numerically solved nonlinear ODEs using MATLAB’s \texttt{ode45} solver.}
+      \resumeItem{Analysed sensitivity to initial conditions through perturbed simulations.}
+      \resumeItem{Generated time-series and 3D phase-space visualisations of chaotic attractors.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Lennard-Jones Potential Modelling} $|$ \emph{Python, NumPy, Pandas, Matplotlib}}{Oct 2023 -- Nov 2024}
+    \resumeItemListStart
+      \resumeItem{Processed experimental data from CSV files using Pandas.}
+      \resumeItem{Implemented mathematical models of interatomic forces using NumPy.}
+      \resumeItem{Produced high-resolution plots comparing theoretical and experimental results.}
+      \resumeItem{Optimised algorithms to generate smooth and accurate visualisations.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Office Administrator}{Ashton under Lyne, England}
+    {Leap Family Contact Centre}{September 2025 to Present}
+    \resumeItemListStart
+      \resumeItem{Maintained accurate digital records and supported internal systems.}
+      \resumeItem{Coordinated workflows and ensured data consistency across teams.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton under Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Installed and configured Windows and Linux operating systems.}
+      \resumeItem{Diagnosed and resolved hardware and software faults.}
+      \resumeItem{Performed testing to ensure system reliability and quality.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
