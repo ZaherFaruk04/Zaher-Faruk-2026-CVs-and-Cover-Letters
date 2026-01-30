@@ -1,0 +1,213 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[british]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 — CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Recent Physics graduate with a strong foundation in statistical analysis and numerical problem solving. Proficient in Python, SQL and Excel for data preprocessing and exploratory data analysis (EDA). Highly motivated to develop professional dashboards in Power BI and Tableau to generate actionable insights. Detail oriented and committed to maintaining data reliability through rigorous documentation and analytical thinking. Eager to contribute to data-driven decision-making at Staffline Solutions.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Data Analytics:} Exploratory Data Analysis (EDA), Data Cleaning, Preprocessing, Statistical Analysis \\
+\textbf{Software \& Visualisation:} Microsoft Excel (Advanced), Power BI (Basic), Tableau, Looker, Google Sheets \\
+\textbf{Programming:} Python (Pandas, NumPy, Matplotlib), SQL, MATLAB, C++ \\
+\textbf{Core Competencies:} Analytical Thinking, Attention to Detail, Problem Solving, Process Documentation \\
+\textbf{Interests:} Business Intelligence, Dashboard Design, Cloud Platforms, Data Governance
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+      \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 to Present}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton-under-Lyne, England}
+    {A Levels in Mathematics, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Office Administrator}{Ashton-under-Lyne, England}
+    {Leap Family Contact Centre}{September 2025 to Present}
+    \resumeItemListStart
+      \resumeItem{Utilised Excel for data entry and reporting, ensuring accuracy and usability for internal audits.}
+      \resumeItem{Developed structured documentation for administrative workflows to ensure data reliability.}
+      \resumeItem{Supported internal teams by identifying operational trends through routine reporting.}
+      \resumeItem{Maintained high standards of information flow across diverse stakeholder groups.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton-under-Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Diagnosed hardware and software issues using a methodical, evidence-based approach.}
+      \resumeItem{Monitored system logs and diagnostics to verify stability and performance post-repair.}
+      \resumeItem{Ensured quality control through meticulous testing and troubleshooting protocols.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Exploratory Data Analysis (EDA) Projects} $|$ \emph{Python, Pandas, Excel}}{2023 to 2025}
+    \resumeItemListStart
+      \resumeItem{Cleaned and preprocessed raw experimental datasets to ensure accuracy before analysis.}
+      \resumeItem{Identified hidden trends and patterns in complex numerical data using Matplotlib and NumPy.}
+      \resumeItem{Generated clear visual representations of data to support evidence-based conclusions.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Numerical Modelling \& Simulation} $|$ \emph{MATLAB, Excel}}{2024}
+    \resumeItemListStart
+      \resumeItem{Performed statistical analyses on non-linear systems to predict behavioural outcomes.}
+      \resumeItem{Built interactive spreadsheets to manage variables and track simulation performance.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Control System Debugging} $|$ \emph{C++, Arduino}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Documented technical processes and workflows to ensure reproducibility and system reliability.}
+      \resumeItem{Resolved logic-based conflicts in software through iterative testing and analysis.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Hobbies}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Kyokushin Karate}{Springhead, England}
+    {Oldham Kyokushinkai Karate}{March 2024 to Present}
+    \resumeItemListStart
+      \resumeItem{Developed discipline, focus and resilience through structured physical and mental practice.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 — COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton-under-Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk} \\
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+Staffline Solutions \\
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Data Analytics Internship}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Data Analytics Internship at Staffline Solutions. As a recent Physics graduate with a strong analytical background, I have spent my academic career collecting, cleaning and interpreting complex datasets. I am eager to transition these skills into a professional analytics environment and help generate the actionable insights that drive business growth.
+
+Your internship summary mentions the need for motivated individuals who can develop dashboards and conduct exploratory data analysis (EDA). During my degree, I developed a disciplined approach to data preprocessing using Python and Excel to ensure information was accurate and usable for modelling. I have a firm grasp of statistical analysis and basic SQL, and I am highly motivated to master business intelligence tools such as Power BI and Tableau under your mentorship.
+
+In my recent experience as an Office Administrator, I have seen first-hand the importance of maintaining data reliability and clear documentation. I am a detail-oriented problem solver who understands that accurate data is the foundation of any successful business decision. I am particularly drawn to Staffline Solutions because of your innovative approach to talent solutions and the structured guidance offered through this programme.
+
+I am ready to apply my technical curiosity and analytical thinking to help your team maintain high-quality datasets and create interactive visualisations. Thank you for considering my application. I look forward to the possibility of discussing how my background and dedication can contribute to the continued success of Staffline Solutions.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+\vspace{0.2cm}
+Zaher Faruk
+
+\end{document}
