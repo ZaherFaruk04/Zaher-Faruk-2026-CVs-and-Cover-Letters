@@ -1,0 +1,215 @@
+%-------------------------
+% Combined CV + Cover Letter
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1: CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$
+    \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics graduate with strong foundations in applied mathematics, programming and systems analysis, currently developing practical skills in information security. Experienced in Python-based automation, data analysis and working within Linux environments. Demonstrates a high level of responsibility when handling sensitive information, with a strong interest in security monitoring, threat intelligence and secure system design. Analytical, methodical and motivated to contribute to real-world security operations.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming \& Scripting:} Python, C++, MATLAB, Bash \\
+\textbf{Security \& IT Fundamentals:} Access control principles, logging and monitoring, system hardening, confidentiality and data handling \\
+\textbf{Data \& Analysis:} NumPy, Pandas, Matplotlib, anomaly detection concepts, time-series analysis \\
+\textbf{Systems:} Linux environments, Windows, version control (Git), debugging and testing \\
+\textbf{Security Interests:} SIEM concepts, threat intelligence workflows, security automation, detection engineering \\
+\textbf{Core Competencies:} Analytical thinking, documentation, clear communication, independent and team-based work
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 -- July 2025}
+  \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 -- Present}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton-under-Lyne, England}
+    {A Levels: Mathematics, Physics, Computer Science}{September 2020 -- July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Physics Cover Teacher (Teaching Personnel)}{Greater Manchester, England}
+    {Secondary Schools}{September 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Delivered structured physics lessons while following safeguarding and confidentiality requirements.}
+      \resumeItem{Explained complex technical concepts clearly to varied audiences.}
+      \resumeItem{Maintained responsibility for student data, classroom environments and lesson continuity.}
+      \resumeItem{Demonstrated professionalism, accountability and sound judgement under time constraints.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton-under-Lyne, England}
+    {Microtech Computers}{September 2018 -- August 2019}
+    \resumeItemListStart
+      \resumeItem{Diagnosed hardware and software faults using structured troubleshooting approaches.}
+      \resumeItem{Installed and configured Windows and Linux operating systems.}
+      \resumeItem{Applied security-conscious practices when handling customer systems and data.}
+      \resumeItem{Tested and validated systems prior to return to customers.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Platforms}}{2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Developed Python scripts to run and analyse workloads on cloud-based quantum platforms.}
+      \resumeItem{Compared results across different architectures using structured analysis techniques.}
+      \resumeItem{Produced concise documentation and summaries for technical audiences.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Chaotic Systems \& Non-Analytic Dynamics} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Performed numerical simulations and time-series analysis to identify anomalous behaviour.}
+      \resumeItem{Applied sensitivity analysis techniques relevant to monitoring and detection contexts.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Lennard-Jones Potential Modelling} $|$ \emph{Python}}{2023 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Processed structured datasets and validated outputs against theoretical expectations.}
+      \resumeItem{Generated analytical visualisations to support reporting and interpretation.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Engineering \& Control Systems} $|$ \emph{C++, Arduino}}{2023 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Developed embedded control logic and tested system behaviour.}
+      \resumeItem{Improved reliability through structured debugging and validation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE 2: COVER LETTER
+%==========================
+
+\newpage
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Greater Manchester, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk}
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+Copper.co \\
+London
+\end{flushleft}
+
+\vspace{0.6cm}
+
+\textbf{Re: Information Security Summer Internship London 2026}
+
+\vspace{0.6cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Information Security Summer Internship at Copper. I am a Physics graduate with a strong background in analytical problem solving, programming and systems thinking, and I am currently developing focused skills in information security. I am particularly drawn to Copper’s role within financial infrastructure, where strong controls, continuous monitoring and secure system design are essential to managing institutional risk.
+
+Throughout my degree, I worked extensively with Python, MATLAB and numerical modelling to analyse complex systems, identify anomalous behaviour and communicate technical findings clearly. These projects required careful reasoning, structured testing and disciplined documentation. These are skills that translate directly to security monitoring, detection engineering and control validation. My academic training has encouraged a methodical approach to problem solving, with an emphasis on accuracy, repeatability and reliability.
+
+Alongside my academic work, I have gained practical experience in technical and responsibility focused environments. As a Computer Technician, I installed and configured Linux and Windows systems, diagnosed faults and handled customer data with care. More recently, as a Physics Cover Teacher, I have worked under strict safeguarding and confidentiality requirements while explaining complex concepts clearly and maintaining accountability within the classroom. These roles have reinforced my respect for sensitive information, operational discipline and professional communication.
+
+I am particularly interested in Copper’s security model, including its use of MPC technology, secure custody and architectural controls. The opportunity to contribute to SIEM monitoring, threat intelligence workflows, access control refinement and security automation closely aligns with my interests and long term career goals. I am motivated by environments where learning is continuous, collaboration is valued and security is embedded into system design.
+
+I would welcome the opportunity to bring my analytical mindset, technical curiosity and strong sense of responsibility to Copper’s Information Security team. I am eager to learn from experienced professionals, contribute meaningfully to live security work and continue developing practical skills that support a long term career in cybersecurity.
+
+Thank you for your time and consideration. I would be pleased to discuss my application further.
+
+\vspace{0.6cm}
+
+Yours sincerely, \\
+\vspace{0.3cm}
+\textbf{Zaher Faruk}
+
+\end{document}
