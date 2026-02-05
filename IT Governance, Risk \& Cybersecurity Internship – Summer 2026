@@ -1,0 +1,238 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+%-------------------------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 — CV
+%==========================
+
+\begin{center}
+  \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+  \small
+  07553 064043 $|$
+  \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk}} $|$
+  \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+%-------------------------
+\section{Profile}
+\small{
+Detail-oriented Physics graduate with a strong interest in IT governance, cybersecurity risk management, and regulatory compliance within financial services. Experienced in analytical problem solving, technical documentation, evidence collection, and working with sensitive information. Familiar with information security principles, operating systems, and structured reporting. Motivated to support governance, risk, audit, and compliance activities within a global organisation.
+}
+
+%-------------------------
+\section{Technical Skills}
+\small{
+\textbf{Programming \& Analysis:} Python, MATLAB, C++ \\
+\textbf{Data \& Reporting:} Excel, Pandas, NumPy, Matplotlib, metrics tracking, documentation \\
+\textbf{Systems \& Security:} Linux and Windows OS, basic networking concepts, system configuration, access control \\
+\textbf{Governance \& Risk Interests:} IT risk management, cybersecurity, regulatory compliance, policy development, vendor risk \\
+\textbf{Core Competencies:} Attention to detail, analytical thinking, written communication, confidentiality, independent working
+}
+
+%-------------------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{The University of Salford}{Salford, England}
+{BSc (Hons) Physics}{September 2022 -- July 2025}
+
+\resumeSubheading
+{NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+{Netcom Training}{January 2026 -- Present}
+
+\resumeSubheading
+{Ashton Sixth Form College}{Ashton-under-Lyne, England}
+{A Levels: Mathematics, Physics, Computer Science}{September 2020 -- July 2022}
+
+\resumeSubHeadingListEnd
+
+%-------------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Physics Teacher (Cover)}{Greater Manchester, England}
+{Teaching Personnel}{September 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Delivered structured lessons aligned with curriculum and assessment requirements.}
+\resumeItem{Prepared clear documentation, lesson plans, and instructional materials.}
+\resumeItem{Managed classroom environments with professionalism, accountability, and discretion.}
+\resumeItem{Communicated complex technical concepts clearly to diverse audiences.}
+\resumeItem{Handled student data responsibly in line with safeguarding and confidentiality requirements.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Computer Technician}{Ashton-under-Lyne, England}
+{Microtech Computers}{September 2018 -- August 2019}
+\resumeItemListStart
+\resumeItem{Diagnosed and resolved hardware and software issues using systematic troubleshooting.}
+\resumeItem{Installed and configured Windows and Linux operating systems.}
+\resumeItem{Tested systems for reliability, security, and performance prior to deployment.}
+\resumeItem{Followed data protection practices when handling customer systems and information.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Platforms}}{2024 -- Present}
+\resumeItemListStart
+\resumeItem{Designed and executed experiments on cloud-based computing platforms.}
+\resumeItem{Documented results and experimental procedures to ensure traceability and reproducibility.}
+\resumeItem{Analysed system behaviour, errors, and limitations using structured methodologies.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Non-Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+\resumeItemListStart
+\resumeItem{Applied numerical solvers to analyse system behaviour under varying conditions.}
+\resumeItem{Performed time-series analysis and generated visual outputs for reporting and review.}
+\resumeItem{Maintained structured records of simulations, assumptions, and outcomes.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Lennard-Jones Potential Modelling} $|$ \emph{Python, NumPy, Pandas}}{2023 -- 2024}
+\resumeItemListStart
+\resumeItem{Processed experimental datasets and validated model outputs against empirical data.}
+\resumeItem{Generated reproducible plots and documented analytical workflows.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Arduino}}{2023 -- 2024}
+\resumeItemListStart
+\resumeItem{Developed embedded control logic for real-time system operation.}
+\resumeItem{Identified system risks and failure modes through structured testing and debugging.}
+\resumeItem{Improved system reliability by refining control parameters and validation procedures.}
+\resumeItem{Documented system behaviour, test results, and design decisions.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 — COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton-under-Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk}
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+Houlihan Lokey Limited \\
+London
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: IT Governance, Risk \& Cybersecurity Internship – Summer 2026}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the IT Governance, Risk \& Cybersecurity Internship at Houlihan Lokey. I am a Physics graduate with a strong interest in cybersecurity risk management, regulatory compliance, and information governance, and I am keen to gain hands-on experience within a global financial services environment.
+
+My academic and project experience has required disciplined documentation, analytical thinking, and working with complex technical systems. I am comfortable supporting structured processes such as evidence collection, reporting, and audit readiness, and I have experience handling sensitive information responsibly. Through my technical projects, I have developed an understanding of system reliability, risk identification, and the importance of controls and validation.
+
+Alongside my degree, I am currently completing a formal qualification in Cyber Security Practices, strengthening my understanding of information security principles, governance, and compliance. I am particularly interested in how regulatory frameworks, internal policies, and cybersecurity metrics support secure and resilient business operations.
+
+I am drawn to Houlihan Lokey for its emphasis on integrity, professionalism, and collaboration across global teams. I am motivated, detail-oriented, and eager to learn from experienced IT and cybersecurity professionals while contributing positively to governance, risk, and compliance initiatives.
+
+Thank you for considering my application. I would welcome the opportunity to further discuss how my skills and interests align with this internship.
+
+\vspace{0.5cm}
+
+Sincerely, \\[0.2cm]
+Zaher Faruk
+
+\end{document}
