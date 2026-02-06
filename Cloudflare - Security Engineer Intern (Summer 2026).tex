@@ -1,0 +1,237 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+%-------------------------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 — CV
+%==========================
+
+\begin{center}
+  \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+  \small
+  07553 064043 $|$
+  \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk}} $|$
+  \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+%-------------------------
+\section{Profile}
+\small{
+Physics graduate with a strong interest in security engineering, defensive systems, and building resilient software. Experienced in Python, C++, and MATLAB, with hands-on work in systems programming, numerical analysis, and embedded control systems. Comfortable working in Linux environments and approaching problems with a security-first mindset, focusing on reliability, failure modes, and mitigation of risk in complex technical systems.
+}
+
+%-------------------------
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, MATLAB \\
+\textbf{Security Fundamentals:} Secure coding concepts, threat modelling, system hardening, vulnerability analysis \\
+\textbf{Systems:} Linux and Windows OS, basic networking, debugging, system configuration \\
+\textbf{Data \& Analysis:} NumPy, Pandas, Matplotlib, numerical modelling, error analysis \\
+\textbf{Core Competencies:} Critical thinking, curiosity, technical documentation, independent problem solving
+}
+
+%-------------------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{The University of Salford}{Salford, England}
+{BSc (Hons) Physics}{September 2022 -- July 2025}
+
+\resumeSubheading
+{NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+{Netcom Training}{January 2026 -- Present}
+
+\resumeSubheading
+{Ashton Sixth Form College}{Ashton-under-Lyne, England}
+{A Levels: Mathematics, Physics, Computer Science}{September 2020 -- July 2022}
+
+\resumeSubHeadingListEnd
+
+%-------------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Physics Teacher (Cover)}{Greater Manchester, England}
+{Teaching Personnel}{January 2026 -- Present}
+\resumeItemListStart
+\resumeItem{Explained complex technical concepts clearly to diverse audiences.}
+\resumeItem{Prepared structured lesson materials and technical documentation.}
+\resumeItem{Maintained disciplined classroom environments with accountability and professionalism.}
+\resumeItem{Handled sensitive student information responsibly and securely.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Computer Technician}{Ashton-under-Lyne, England}
+{Microtech Computers}{September 2018 -- August 2019}
+\resumeItemListStart
+\resumeItem{Diagnosed hardware and software issues using systematic troubleshooting.}
+\resumeItem{Installed and configured Linux and Windows operating systems.}
+\resumeItem{Tested systems for stability, reliability, and security before deployment.}
+\resumeItem{Developed an understanding of real-world system vulnerabilities and failure points.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Platforms}}{2024 -- Present}
+\resumeItemListStart
+\resumeItem{Developed Python code to execute experiments on cloud-based quantum computing platforms.}
+\resumeItem{Analysed system behaviour, errors, and noise sources using structured methodologies.}
+\resumeItem{Documented experimental processes and results for reproducibility and review.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Arduino}}{2023 -- 2024}
+\resumeItemListStart
+\resumeItem{Developed embedded control logic for real-time systems.}
+\resumeItem{Identified failure modes and system risks through iterative testing and debugging.}
+\resumeItem{Improved reliability and safety by refining control parameters and validation logic.}
+\resumeItem{Gained hands-on experience with low-level systems, constraints, and defensive design.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Non-Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+\resumeItemListStart
+\resumeItem{Simulated complex systems to study sensitivity to initial conditions.}
+\resumeItem{Performed time-series analysis and error analysis on simulation outputs.}
+\resumeItem{Produced clear visualisations and documentation to support technical conclusions.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Lennard-Jones Potential Modelling} $|$ \emph{Python, NumPy, Pandas}}{2023 -- 2024}
+\resumeItemListStart
+\resumeItem{Processed datasets and implemented mathematical models in Python.}
+\resumeItem{Validated model outputs and documented assumptions and limitations.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 — COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton-under-Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk}
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+Cloudflare \\
+London
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Security Engineer Intern – Summer 2026}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Security Engineer Intern position at Cloudflare. I am a Physics graduate with a strong interest in security engineering, defensive systems, and building resilient infrastructure, and I am motivated by Cloudflare’s mission to help build a better and more secure Internet.
+
+Through my academic and technical projects, I have developed strong foundations in programming, systems thinking, and analytical problem solving. My work has involved identifying failure modes, analysing system behaviour under stress, and implementing structured mitigations, skills that naturally align with a security-first engineering mindset. I am comfortable working in Linux environments and writing Python and C++ code to analyse, test, and improve system reliability.
+
+In parallel with my degree, I am completing a formal qualification in Cyber Security Practices, strengthening my understanding of common attack vectors, secure system design, and defensive controls. I am particularly interested in how large-scale infrastructure can be protected through thoughtful engineering, automation, and continuous learning.
+
+Cloudflare’s scale, culture, and focus on protecting the open Internet strongly resonate with me. I am curious, proactive, and eager to learn from experienced security engineers while contributing meaningfully to projects that defend millions of users worldwide.
+
+Thank you for considering my application. I would welcome the opportunity to further discuss how my skills and interests align with this internship.
+
+\vspace{0.5cm}
+
+Sincerely, \\[0.2cm]
+Zaher Faruk
+
+\end{document}
