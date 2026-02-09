@@ -1,0 +1,217 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics teacher with a solid foundation in cybersecurity and practical experience in technical analysis, system troubleshooting, and structured documentation gained at Netcom. Knowledgeable in security monitoring principles, vulnerability assessment, and the fundamentals of incident response. Skilled in Linux environments and trusted with handling sensitive information responsibly. Highly motivated to strengthen hands-on capabilities in security operations, threat analysis, and cyber defence.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, MATLAB \\
+\textbf{Security and Monitoring:} Log analysis, vulnerability assessment concepts, endpoint security awareness, SIEM fundamentals \\
+\textbf{Systems:} Linux and Windows operating systems, basic networking concepts, firewalls, system configuration \\
+\textbf{Data and Analysis:} NumPy, Pandas, Matplotlib, Excel, reporting and documentation \\
+\textbf{Core Competencies:} Analytical thinking, attention to detail, incident awareness, documentation, teamwork
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+  \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 to Present}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Physics Teacher (Cover)}{Greater Manchester, England}
+    {Teaching Personnel}{February 2026 to Present}
+    \resumeItemListStart
+      \resumeItem{Maintained accurate records and documentation in line with safeguarding requirements.}
+      \resumeItem{Handled sensitive personal information with discretion and professionalism.}
+      \resumeItem{Communicated clearly in fast-paced and high-responsibility environments.}
+      \resumeItem{Demonstrated strong situational awareness and calm decision making.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton under Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Diagnosed hardware and software issues using structured troubleshooting techniques.}
+      \resumeItem{Installed, configured and tested Linux and Windows systems.}
+      \resumeItem{Verified system security, stability and antivirus functionality before deployment.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Cyber Security Labs and Threat Analysis} $|$ \emph{Linux, SIEM Concepts}}{2026}
+    \resumeItemListStart
+      \resumeItem{Analysed simulated security events and logs to identify suspicious activity.}
+      \resumeItem{Documented incidents, findings and recommended remediation actions.}
+      \resumeItem{Researched emerging threats, vulnerabilities and attack techniques.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Platforms}}{2024 to 2025}
+    \resumeItemListStart
+      \resumeItem{Developed Python scripts to collect and analyse system output data.}
+      \resumeItem{Validated results and documented findings in a structured manner.}
+      \resumeItem{Applied analytical thinking to identify anomalies and unexpected behaviours.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Analysed time series data to detect patterns and irregular behaviour.}
+      \resumeItem{Produced clear visual outputs to support technical reporting.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Arduino}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Configured embedded systems and tested control logic for reliability.}
+      \resumeItem{Debugged system behaviour and documented findings.}
+    \resumeItemListEnd
+
+  
+
+
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton under Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk} \\
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+Conquer IT \\
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Cybersecurity Intern}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Cybersecurity Intern position at Conquer IT. I am a Physics graduate with a strong interest in cybersecurity and practical experience in system analysis, troubleshooting and structured documentation. I am eager to gain hands-on experience in security monitoring, incident response and cyber defence within a professional environment.
+
+Through my academic and technical projects, I have developed strong analytical skills and experience working with logs, system outputs and structured datasets. I am familiar with core cybersecurity concepts such as vulnerability analysis, endpoint protection, firewall configuration and security monitoring, and I am keen to apply these skills in a real-world security operations setting.
+
+Alongside my technical background, I have experience handling sensitive information responsibly, maintaining accurate documentation and working calmly under pressure. My experience in Linux environments and system configuration has strengthened my understanding of operating systems and security fundamentals, while my current cybersecurity training reinforces my interest in threat analysis, compliance and cyber hygiene.
+
+I am particularly drawn to Conquer IT because of its hands-on approach to cybersecurity and the opportunity to learn directly from experienced security professionals. I am motivated, detail-oriented and enthusiastic about contributing to the security team while continuing to develop my technical skills.
+
+Thank you for your time and consideration. I would welcome the opportunity to discuss my application further.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+\vspace{0.2cm}
+Zaher Faruk
+
+\end{document}
