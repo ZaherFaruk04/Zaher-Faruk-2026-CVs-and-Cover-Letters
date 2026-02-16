@@ -1,0 +1,217 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics teacher with strong analytical and research skills, currently undertaking cybersecurity training. Experience in Python and C++ development, Linux environments, data analysis, and structured technical reporting. Interested in cyber security research, AI/ML applications, secure systems design, and innovation within critical infrastructure environments. Motivated to contribute to hands-on experimentation, prototype development, and emerging cybersecurity research.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, MATLAB (familiar with Java fundamentals) \\
+\textbf{Cyber Security:} Vulnerability assessment concepts, security monitoring principles, secure software development awareness, risk analysis fundamentals \\
+\textbf{Networking \& Protocols:} TCP/IP fundamentals, VLAN concepts, firewalls, basic packet analysis (Wireshark exposure), Nmap scanning principles \\
+\textbf{Systems:} Linux (Ubuntu, Kali exposure), Windows OS, system configuration \\
+\textbf{Tools \& Research:} NumPy, Pandas, Matplotlib, statistical analysis, technical report writing, research design fundamentals \\
+\textbf{Core Competencies:} Analytical thinking, research methodology, autonomous working, curiosity-driven problem solving, technical communication
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+  \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 to Present}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Physics Teacher (Cover)}{Greater Manchester, England}
+    {Teaching Personnel}{February 2026 to Present}
+    \resumeItemListStart
+      \resumeItem{Communicated complex technical concepts clearly and effectively in structured environments.}
+      \resumeItem{Maintained professional documentation and records with high attention to detail.}
+      \resumeItem{Worked independently with minimal supervision while adapting to new environments quickly.}
+      \resumeItem{Demonstrated strong verbal and written communication skills.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton under Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Diagnosed and resolved hardware and software issues using structured troubleshooting techniques.}
+      \resumeItem{Installed and configured Linux and Windows systems ensuring secure and stable deployment.}
+      \resumeItem{Applied basic networking configuration and security principles during system setup.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Cyber Security Labs and Threat Analysis} $|$ \emph{Linux, SIEM Concepts}}{2026}
+    \resumeItemListStart
+      \resumeItem{Analysed simulated security logs to identify suspicious behaviour and potential vulnerabilities.}
+      \resumeItem{Conducted vulnerability scanning exercises and documented findings in structured technical reports.}
+      \resumeItem{Explored intrusion detection principles and defensive security strategies.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Platforms}}{2024 to 2025}
+    \resumeItemListStart
+      \resumeItem{Developed Python programs to analyse system outputs and validate computational models.}
+      \resumeItem{Applied statistical techniques and structured research methodologies.}
+      \resumeItem{Produced formal technical documentation detailing methodology and results.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Designed and tested simulation models using research-driven experimental approaches.}
+      \resumeItem{Applied mathematical analysis and statistical reasoning to interpret results.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Embedded Systems}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Integrated hardware and software components and conducted iterative system testing.}
+      \resumeItem{Debugged real-time behaviour and improved system stability under constraints.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton under Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk} \\
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+Airbus Cyber Innovation Team \\
+Newport, South Wales \\
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Cyber Security Research Placement (12.5 months)}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Cyber Security Research Placement within the Airbus Cyber Innovation Team. As a Physics teacher with strong analytical training and current cybersecurity studies, I am highly motivated to contribute to cutting-edge research and prototype development addressing real-world security challenges in aerospace.
+
+My academic background has developed strong research design, statistical analysis, and technical documentation skills. Through my quantum computing and simulation projects, I have designed experiments, implemented computational models in Python and C++, validated results rigorously, and produced structured technical reports. These experiences have strengthened my ability to translate theory into practical, testable solutions: an approach that aligns closely with innovation-focused cybersecurity research.
+
+Alongside this, my cybersecurity training and hands-on lab work have introduced me to vulnerability assessment, security monitoring concepts, Linux environments, network fundamentals (TCP/IP, VLANs), and scanning tools such as Nmap and Wireshark. I am particularly interested in the intersection of AI/ML, secure systems, and operational technology security, and I am eager to expand my exposure to advanced research areas such as cloud security, intrusion detection, and emerging threat modelling.
+
+I am naturally curious, comfortable working autonomously, and motivated by solving complex technical problems. The opportunity to collaborate with multidisciplinary teams, contribute to research publications, and support innovation within a global aerospace leader strongly aligns with both my technical ambitions and personal development goals.
+
+Thank you for considering my application. I would welcome the opportunity to contribute to Airbus’ cybersecurity research initiatives and further develop my skills within your world-class R\&D environment.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+\vspace{0.2cm}
+Zaher Faruk
+
+\end{document}
