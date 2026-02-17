@@ -1,0 +1,207 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics teacher with strong analytical thinking and a developing specialisation in Cyber Security. Experience in security assessments, log analysis, vulnerability awareness and structured technical documentation. Skilled in identifying potential system weaknesses, analysing suspicious activity, and communicating complex technical concepts clearly. Motivated to contribute to protecting banking systems through collaborative teamwork, user education and practical cyber defence.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Cyber Security Knowledge:} Threat assessment, vulnerability assessment concepts, risk management fundamentals, security monitoring principles \\
+\textbf{Security Assessments:} Log analysis, network traffic inspection, structured testing, issue documentation, remediation recommendations \\
+\textbf{Tools and Systems:} Linux (Ubuntu), Windows OS, Nmap, Wireshark, basic firewall and endpoint security awareness \\
+\textbf{Programming and Analysis:} Python, C++, MATLAB, NumPy, Pandas, Matplotlib \\
+\textbf{Data and Reporting:} Excel, structured documentation, analytical reporting \\
+\textbf{Core Competencies:} Analytical thinking, problem-solving, attention to detail, interpersonal communication, teamwork, user education
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+  \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 to Present}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Physics Teacher (Cover)}{Greater Manchester, England}
+    {Teaching Personnel}{February 2026 to Present}
+    \resumeItemListStart
+      \resumeItem{Explained complex technical concepts clearly to diverse audiences, strengthening user education and communication skills.}
+      \resumeItem{Maintained accurate documentation and records with strong attention to detail.}
+      \resumeItem{Collaborated with staff in fast-paced environments requiring professionalism and teamwork.}
+      \resumeItem{Demonstrated calm decision-making and situational awareness in responsible settings.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton under Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Diagnosed hardware and software issues using structured troubleshooting and analytical problem-solving techniques.}
+      \resumeItem{Installed and configured Linux and Windows systems with focus on security, stability and antivirus verification.}
+      \resumeItem{Assisted customers by explaining technical issues and recommended secure usage practices.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Cyber Security Labs and Threat Analysis} $|$ \emph{Linux, Network Analysis}}{2026}
+    \resumeItemListStart
+      \resumeItem{Conducted simulated security assessments to identify vulnerabilities in controlled environments.}
+      \resumeItem{Analysed network traffic and system logs to detect suspicious activity and potential threats.}
+      \resumeItem{Documented findings and proposed mitigation strategies to reduce security risks.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Platforms}}{2024 to 2025}
+    \resumeItemListStart
+      \resumeItem{Developed scripts to analyse structured system output data and validate computational results.}
+      \resumeItem{Applied analytical thinking to identify anomalies and unexpected system behaviour.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Analysed time series data to detect irregular patterns and behavioural deviations.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton under Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk} \\
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Recruiting Team} \\
+FirstBank UK Limited \\
+London \\
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Cyber Security Internship – Safeguard Banking Systems in London}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Cyber Security Internship at FirstBank UK Limited. As a Physics teacher with strong analytical training and developing expertise in cyber security practices, I am highly motivated to contribute to safeguarding banking systems through structured security assessments and effective user education.
+
+Through my cyber security training and laboratory work, I have conducted simulated security assessments, analysed network traffic and system logs, and identified potential vulnerabilities within controlled environments. I understand core concepts such as threat assessment, risk identification and mitigation strategies, and I am comfortable documenting findings clearly and systematically.
+
+Alongside my technical capabilities, I bring strong interpersonal and communication skills developed through my teaching experience. I regularly translate complex technical ideas into accessible explanations, an ability directly aligned with educating users on secure practices and promoting cyber awareness within an organisation.
+
+I am particularly motivated by the opportunity to gain hands-on experience within a banking environment, where robust cyber security plays a critical role in protecting financial systems and maintaining customer trust. The collaborative nature of this internship strongly appeals to me, and I am eager to contribute positively to the team while continuing to develop my practical cyber security skills.
+
+Thank you for your consideration. I would welcome the opportunity to further discuss how I can contribute to FirstBank UK Limited during this 10-week internship programme.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+\vspace{0.2cm}
+Zaher Faruk
+
+\end{document}
