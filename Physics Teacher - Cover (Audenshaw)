@@ -1,0 +1,168 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics graduate and current Physics Cover Teacher with experience supervising classes across Physics, Chemistry, Biology, Mathematics and Computing. I previously attended Audenshaw High School as a student, giving me a strong understanding of the school’s values, routines and expectations. I am confident managing behaviour, supporting students of all abilities and maintaining calm and purposeful learning environments. My STEM background is strengthened by university projects in quantum computing, chaotic system modelling, mathematical analysis and control systems, which allow me to explain complex ideas clearly and support a wide range of curriculum content. I am motivated, reliable and committed to contributing positively to the Audenshaw community and supporting high quality teaching and learning.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, MATLAB \\
+\textbf{Data and Analysis:} NumPy, Pandas, Matplotlib, Excel, data validation, reporting and metrics \\
+\textbf{Systems:} Linux environments, operating systems, scripting, troubleshooting, version control \\
+\textbf{Cybersecurity and GRC:} Information security fundamentals, IT risk management, governance, compliance, audit readiness, policy documentation \\
+\textbf{Core Competencies:} Analytical thinking, attention to detail, technical communication, professionalism, handling sensitive information
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+  \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 to Present}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Physics Teacher (Cover)}{Greater Manchester, England}
+    {Teaching Personnel}{February 2026 to Present}
+    \resumeItemListStart
+     \resumeItem{Delivered lessons in Physics, Chemistry, Biology, Mathematics and Computing using teacher plans and school policies.}
+      \resumeItem{Managed behaviour effectively and maintained calm, structured and purposeful learning environments.}
+      \resumeItem{Supported students with explanations, guidance and clarification of scientific and mathematical concepts.}
+      \resumeItem{Completed registers, handover notes and documentation accurately and professionally.}
+      \resumeItem{Communicated clearly with staff and contributed positively to departmental routines.}
+
+
+    \resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Python, IBM Quantum, Azure}}{2024 to 2025}
+    \resumeItemListStart
+      \resumeItem{Developed Python code to design, execute and analyse experiments on cloud based quantum platforms.}
+      \resumeItem{Analysed outputs from multiple architectures including superconducting, photonic and trapped ion systems.}
+      \resumeItem{Interpreted complex experimental data and communicated findings clearly.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Solved systems of differential equations using numerical solvers.}
+      \resumeItem{Performed time series analysis to study sensitivity to initial conditions.}
+      \resumeItem{Visualised chaotic attractors to support technical interpretation.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Lennard Jones Potential Modelling} $|$ \emph{Python, NumPy, Pandas}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Processed experimental datasets and implemented mathematical models.}
+      \resumeItem{Generated high resolution plots to compare theoretical and empirical results.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Arduino}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Developed real time control logic and debugged embedded systems.}
+      \resumeItem{Improved system reliability through structured testing and analysis.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+
+
+\end{document}
