@@ -1,0 +1,214 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics undergraduate with strong computational modelling and programming experience seeking to contribute to the Advanced Control Unit within UKAEA’s Computing Division. Experienced in simulation development, control system modelling, numerical analysis and iterative prototype development. Motivated to apply software engineering skills to fusion operations, plasma control simulation and training tool development supporting the STEP programme.
+}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, C++, MATLAB \\
+\textbf{Simulation and Control:} Dynamic systems modelling, numerical solvers, control system fundamentals, system stability analysis \\
+\textbf{Software Development:} Object-oriented programming, iterative development, debugging, testing, code documentation \\
+\textbf{Scientific Computing:} NumPy, Pandas, data analysis, visualisation, technical reporting \\
+\textbf{Systems:} Linux environments, structured testing workflows, algorithm optimisation \\
+\textbf{Core Competencies:} Analytical thinking, technical communication, collaboration, documentation, problem solving
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {The University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Maths, Physics and Computer Science}{September 2020 to July 2022}
+  \resumeSubheading
+    {NCFE Level 3 Certificate in Cyber Security Practices}{Online}
+    {Netcom Training}{January 2026 to Present}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Physics Teacher (Cover)}{Greater Manchester, England}
+    {Teaching Personnel}{February 2026 to Present}
+    \resumeItemListStart
+      \resumeItem{Explained complex technical and scientific concepts clearly to varied audiences.}
+      \resumeItem{Produced structured documentation and progress reporting.}
+      \resumeItem{Maintained strong organisational skills in fast paced environments.}
+      \resumeItem{Demonstrated collaboration and effective communication within multidisciplinary teams.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Computer Technician}{Ashton under Lyne, England}
+    {Microtech Computers}{September 2018 to August 2019}
+    \resumeItemListStart
+      \resumeItem{Diagnosed hardware and software faults using systematic debugging and testing approaches.}
+      \resumeItem{Installed, configured and validated Linux and Windows systems.}
+      \resumeItem{Verified system stability, performance and reliability prior to deployment.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Simulation, Cloud Platforms}}{2024 to 2025}
+    \resumeItemListStart
+      \resumeItem{Developed structured software to interact with distributed computational systems.}
+      \resumeItem{Applied numerical modelling and simulation techniques to analyse system behaviour.}
+      \resumeItem{Implemented iterative testing and refinement to improve system performance.}
+      \resumeItem{Documented technical findings and produced analytical reports.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+    \resumeItemListStart
+      \resumeItem{Modelled nonlinear dynamic systems and analysed stability behaviour.}
+      \resumeItem{Implemented numerical solvers to simulate system evolution over time.}
+      \resumeItem{Produced visual outputs to support technical interpretation and reporting.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Engineering and Control System Development} $|$ \emph{C++, Arduino}}{2023 to 2024}
+    \resumeItemListStart
+      \resumeItem{Designed and tested embedded control logic for real time systems.}
+      \resumeItem{Applied control system principles to ensure reliable system response.}
+      \resumeItem{Debugged and refined prototype implementations through structured iteration.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%==========================
+% PAGE BREAK
+%==========================
+
+\newpage
+
+%==========================
+% PAGE 2 COVER LETTER
+%==========================
+
+\begin{flushleft}
+\textbf{Zaher Faruk} \\
+Ashton under Lyne, UK \\
+07553 064043 \\
+\href{mailto:zaherfaruk04@gmail.com}{zaherfaruk04@gmail.com} \\
+\href{https://www.linkedin.com/in/zaher-faruk/}{linkedin.com/in/zaher-faruk} \\
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textbf{Hiring Team} \\
+UK Atomic Energy Authority \\
+Advanced Control Unit \\
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\textbf{Re: Summer Placement Scheme – Computing Advanced Control}
+
+\vspace{0.5cm}
+
+Dear Hiring Team,
+
+\vspace{0.3cm}
+
+I am writing to apply for the Summer Placement Scheme within the Advanced Control Unit of UKAEA’s Computing Division. As a Physics undergraduate with strong experience in simulation, control systems modelling and prototype development, I am highly motivated to contribute to fusion operations and the development of advanced training and testing tools supporting the STEP programme.
+
+Through my academic projects, I have developed software for modelling complex dynamic systems, implementing numerical solvers and analysing system stability. My work has required iterative development, structured debugging and detailed documentation, ensuring reliability and clarity in technical outputs. I have applied control system principles within embedded systems projects and simulation environments, aligning closely with prototype control-system testing and plasma control modelling.
+
+I am particularly interested in supporting the development of simulation-based and computer-games-inspired training applications for operator development. My experience building interactive computational tools and refining system behaviour through structured testing has prepared me to contribute effectively within the Advanced Control Unit.
+
+In addition to technical capability, I have demonstrated strong collaboration and communication skills through teaching and technical roles, explaining complex concepts clearly and contributing positively within team environments.
+
+I am enthusiastic about contributing to the future of fusion energy and gaining hands-on experience within UKAEA’s Advanced Control Unit.
+
+Thank you for your time and consideration. I would welcome the opportunity to discuss my application further.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+\vspace{0.2cm}
+Zaher Faruk
+
+\end{document}
