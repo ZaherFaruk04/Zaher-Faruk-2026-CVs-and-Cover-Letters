@@ -1,0 +1,154 @@
+%-------------------------
+% Combined CV + Cover Letter in LaTeX
+% Page 1: CV
+% Page 2: Cover Letter
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%==========================
+% PAGE 1 CV
+%==========================
+
+\begin{center}
+    \textbf{\Huge \scshape Zaher Faruk} \\ \vspace{1pt}
+    \small 07553 064043 $|$ \href{mailto:zaherfaruk04@gmail.com}{\underline{zaherfaruk04@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zaher-faruk/}{\underline{linkedin.com/in/zaher-faruk/}} $|$
+    \href{https://github.com/ZaherFaruk04}{\underline{github.com/ZaherFaruk04}}
+\end{center}
+
+\section{Profile}
+\small{
+Physics graduate, Science PGCE trainee and former Physics Cover Teacher with experience delivering Physics, Chemistry, Biology, Mathematics and Computing lessons in secondary schools. Strong classroom management skills and ability to maintain calm, structured and purposeful learning environments. Strong Physics subject knowledge supported by university study and projects in quantum computing, mathematical modelling and dynamical systems. Familiar with safeguarding responsibilities, UK curriculum requirements and inclusive classroom practice. Committed to supporting student progress, engagement and achievement in Science and Mathematics.
+}
+
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of Birmingham}{Birmingham, England}
+    {Science PGCE (Physics Specialism)}{September 2026 to Present}
+
+  \resumeSubheading
+    {University of Salford}{Salford, England}
+    {BSc (Hons) Physics}{September 2022 to July 2025}
+
+  \resumeSubheading
+    {Ashton Sixth Form College}{Ashton under Lyne, England}
+    {A Levels in Mathematics, Physics and Computer Science}{September 2020 to July 2022}
+
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Science and Mathematics Teacher (Cover)}{Greater Manchester, England}
+    {Teaching Personnel}{February 2026 to July 2026}
+
+\resumeItemListStart
+\resumeItem{Delivered Physics, Chemistry, Biology, Mathematics and Computing lessons using school schemes of work and teacher planning}
+\resumeItem{Maintained positive behaviour and productive classroom environments through consistent behaviour management}
+\resumeItem{Supported students of different abilities through explanation, questioning and differentiated guidance}
+\resumeItem{Used formative assessment to check understanding and support progress}
+\resumeItem{Maintained accurate registers, records and lesson feedback}
+\resumeItem{Worked with teaching and pastoral staff to support student progress and wellbeing}
+\resumeItem{Followed safeguarding procedures and maintained professional standards in line with school policy}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Teaching Skills and Professional Competencies}
+\small{
+\textbf{Teaching and Learning:} Lesson delivery, classroom management, behaviour management, assessment for learning, differentiation, adaptive teaching, student engagement \\
+\textbf{Curriculum Knowledge:} Physics KS3 to KS5, Science KS3 to KS4, Mathematics support, scientific investigation, practical work \\
+\textbf{Safeguarding and Inclusion:} Safeguarding awareness, SEND support, inclusive practice, student wellbeing, equality and diversity \\
+\textbf{Professional Skills:} Communication, teamwork, record keeping, reporting, professional conduct
+}
+
+\section{Subject Knowledge and Academic Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Programming Quantum Computers} $|$ \emph{Python, Cloud Quantum Platforms}}{2024 to 2025}
+\resumeItemListStart
+\resumeItem{Developed quantum computing experiments using Python and cloud-based platforms}
+\resumeItem{Analysed outputs from multiple quantum architectures and interpreted results}
+\resumeItem{Produced technical reports communicating complex Physics concepts}
+\resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Non Analytic Basins and Chaotic System Simulation} $|$ \emph{MATLAB}}{2024}
+\resumeItemListStart
+\resumeItem{Modelled dynamical systems using numerical methods and differential equations}
+\resumeItem{Analysed chaos and sensitivity to initial conditions using time series data}
+\resumeItem{Visualised mathematical behaviour and interpreted results}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Additional Information}
+\small{
+I hold an enhanced DBS certificate on the Update Service and a British passport confirming full right to work in the United Kingdom. I also have safeguarding certification and experience in child protection procedures. Committed to safeguarding, inclusive practice and professional development. 
+
+}
+
+\end{document}
